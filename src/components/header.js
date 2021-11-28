@@ -13,7 +13,7 @@ const Header = () => {
     const location = useLocation();
     const handleChange = async () =>{
         try{
-            const response =   await logout()
+            await logout()
             dispatch({type:"logout"})
             navigate('/')
             setUser(null)

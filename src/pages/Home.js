@@ -87,7 +87,7 @@ const Home = () => {
 
     const handleDelete = async () => {
         try{
-            const response = await deleteTweet(tweet._id)
+             await deleteTweet(tweet._id)
             const newTw = [...tweets]
             const index = newTw.findIndex(t => t._id === tweet._id)
             newTw.splice(index,1)
