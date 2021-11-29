@@ -14,7 +14,7 @@ function App() {
    <UserProvider  >
     <BrowserRouter>
       <Header />
-      <div  className="container col">
+      <div  className="container col-7">
       <Routes  >
       
         <Route path="/auth/login"  element={<Login />} />
